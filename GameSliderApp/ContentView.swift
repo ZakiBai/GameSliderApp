@@ -19,7 +19,7 @@ struct ContentView: View {
             
             HStack {
                 Text("0")
-                UISliderRepresentation(value: $sliderValue)
+                UISliderRepresentation(sliderValue: $sliderValue, targetValue: $targetValue)
                 Text("100")
             }
             
@@ -27,7 +27,10 @@ struct ContentView: View {
                 showAlert = true
             }
             .alert(isPresented: $showAlert) {
-                Alert(title: Text("Your score"), message: Text(computeScore().formatted()))
+                Alert(
+                    title: Text("Your score"),
+                    message: Text(computeScore().formatted())
+                )
             }
             
             Button("Начать заново") {
