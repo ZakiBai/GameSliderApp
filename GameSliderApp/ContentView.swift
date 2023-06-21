@@ -10,19 +10,24 @@ import SwiftUI
 struct ContentView: View {
     @State private var targetValue = Int.random(in: 0...100)
     @State private var showAlert = false
+    @State private var sliderValue: Float = 50.0
     
     var body: some View {
         VStack(spacing: 25) {
             
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
             
-            // Place to slider
+            HStack {
+                Text("0")
+                UISliderRepresentation(value: $sliderValue)
+                Text("100")
+            }
             
             Button("Проверь меня!") {
                 showAlert = true
             }
             .alert(isPresented: $showAlert) {
-                Alert(title: Text("Your score"), message: Text("12"))
+                Alert(title: Text("Your score"), message: Text(computeScore().formatted()))
             }
             
             Button("Начать заново") {
@@ -35,7 +40,7 @@ struct ContentView: View {
   
     
     private func computeScore() -> Int {
-        let difference = abs(targetValue - lround(12)) //currentValue
+        let difference = abs(targetValue - lround(Double(sliderValue)))
         return 100 - difference
     }
 

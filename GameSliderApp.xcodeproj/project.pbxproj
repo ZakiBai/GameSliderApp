@@ -11,6 +11,7 @@
 		35B63AFF2A42D1B100689748 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B63AFE2A42D1B100689748 /* ContentView.swift */; };
 		35B63B012A42D1B400689748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B63B002A42D1B400689748 /* Assets.xcassets */; };
 		35B63B042A42D1B400689748 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B63B032A42D1B400689748 /* Preview Assets.xcassets */; };
+		35B63B0B2A42E78600689748 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B63B0A2A42E78600689748 /* UISliderRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		35B63AFE2A42D1B100689748 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35B63B002A42D1B400689748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B63B032A42D1B400689748 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35B63B0A2A42E78600689748 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				35B63AFC2A42D1B100689748 /* GameSliderAppApp.swift */,
+				35B63B0A2A42E78600689748 /* UISliderRepresentation.swift */,
 				35B63AFE2A42D1B100689748 /* ContentView.swift */,
 				35B63B002A42D1B400689748 /* Assets.xcassets */,
 				35B63B022A42D1B400689748 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B63B0B2A42E78600689748 /* UISliderRepresentation.swift in Sources */,
 				35B63AFF2A42D1B100689748 /* ContentView.swift in Sources */,
 				35B63AFD2A42D1B100689748 /* GameSliderAppApp.swift in Sources */,
 			);
